@@ -2,7 +2,11 @@
 
 An opinionated, test driven, "broiler platter" for developing your chef infrastructure.
 
-The goals of this project are:
+Master branch: [![Build Status](https://travis-ci.org/jrobertfox/chef-broiler-platter.png?branch=master)](https://travis-ci.org/jrobertfox/chef-broiler-platter)
+
+Develop branch: [![Build Status](https://travis-ci.org/jrobertfox/chef-broiler-platter.png?branch=develop)](https://travis-ci.org/jrobertfox/chef-broiler-platter)
+
+####The goals of this project are:
 - Learn how to develop Chef cookbooks.
 - Develop cookbooks in a sound, test driven way.
 - Help others new to the game.
