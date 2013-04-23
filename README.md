@@ -22,6 +22,8 @@ Run this command to check the rest of your dependencies:
 
     rake check
 
+Use the file located in `environment.sh` to set the needed environment variables. You can source this file or add the variables to your `.bash_profile`. These can be over ridden in forked projects by specifying them in the included `knife.rb` file. In general the file has been set up to allow multiple users to access the project repository.
+
 ##It is this simple:
 
 Clone this repository:
