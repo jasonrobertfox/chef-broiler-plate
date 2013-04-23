@@ -17,6 +17,8 @@ There are a number of dependencies to use this, at a bare minimum:
 - Ruby 1.9.3
 - Rake
 - Bundler
+- Virtual Box
+- Vagrant
 
 Run this command to check the rest of your dependencies:
 
