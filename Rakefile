@@ -44,8 +44,27 @@ task :check do
       if File.exist?(file)
         puts " - \e\[32mFile: \"#{file}\" found.\e\[0m\n"
       else
-        errors.push(" - \e\[31mRequired file \"#{file}\" not found!\e\[0m\n")
+        errors.push(" - \e\[31mRequired file: \"#{file}\" not found!\e\[0m\n")
       end
+    end
+
+    if system("command -v virtualbox >/dev/null 2>&1")
+      puts " - \e\[32mProgram: \"virtualbox\" found.\e\[0m\n"
+    else
+      errors.push(" - \e\[31mProgram: \"virtualbox\" not found!\e\[0m\n")
+    end
+
+    if system("command -v vagrant >/dev/null 2>&1")
+      puts " - \e\[32mProgram: \"vagrant\" found.\e\[0m\n"
+      %x{vagrant --version}.match(/\d+\.\d+\.\d+/) { |m|
+        if Gem::Version.new(m.to_s) < Gem::Version.new('1.1.0')
+          errors.push(" -- \e\[31mVagrant version \"#{m.to_s}\" is too old!\e\[0m\n")
+        else
+          puts " - \e\[32mVagrant \"#{m.to_s}\" works!\e\[0m\n"
+        end
+      }
+    else
+      errors.push(" - \e\[31mProgram: \"vagrant\" not found!\e\[0m\n")
     end
 
   unless errors.empty?
