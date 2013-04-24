@@ -3,7 +3,7 @@ my_orgname              = ENV['OPSCODE_ORGNAME']
 my_chef_server_url      = ENV['KNIFE_CHEF_SERVER']
 my_cookbook_copyright   = ENV['KNIFE_COOKBOOK_COPYRIGHT']
 my_cookbook_license     = ENV['KNIFE_COOKBOOK_LICENSE']
-my_cookbook_email       = ENV['KNIFE_CACHE_PATH']
+my_cookbook_email       = ENV['KNIFE_COOKBOOK_EMAIL']
 
 
 #Configuration
