@@ -74,6 +74,14 @@ end
 
 desc "Builds the package."
 task :build do
+  Rake::Task[:knife_test].execute
+  Rake::Task[:foodcritic].execute
+  Rake::Task[:chefspec].execute
+end
+
+desc "Builds the package for ci server."
+task :build_ci do
+  Rake::Task[:knife_test_ci].execute
   Rake::Task[:foodcritic].execute
   Rake::Task[:chefspec].execute
 end
@@ -97,4 +105,14 @@ end
 desc "Runs foodcritic against all the cookbooks."
 task :foodcritic do
   sh "bundle exec foodcritic -I test/foodcritic/* -f any cookbooks"
+end
+
+desc "Runs knife cookbook test against all the cookbooks."
+task :knife_test do
+  sh "bundle exec knife cookbook test -a"
+end
+
+desc "Runs foodcritic against all the cookbooks."
+task :knife_test_ci do
+  sh "bundle exec knife cookbook test -a -c test/knife.rb"
 end
