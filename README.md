@@ -1,5 +1,7 @@
 #Chef Broiler Platter
 
+![image](http://www.templeofthai.com/images/products/6270000420.jpg)
+
 An opinionated, test driven, "broiler platter" for developing your chef infrastructure.
 
 Master branch: [![Build Status](https://travis-ci.org/jrobertfox/chef-broiler-platter.png?branch=master)](https://travis-ci.org/jrobertfox/chef-broiler-platter)
