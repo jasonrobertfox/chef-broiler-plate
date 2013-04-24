@@ -74,16 +74,16 @@ end
 
 desc "Builds the package."
 task :build do
+  Rake::Task[:knife_test].execute
   Rake::Task[:foodcritic].execute
   Rake::Task[:chefspec].execute
-  Rake::Task[:knife_test].execute
 end
 
-desc "Builds the package."
+desc "Builds the package for ci server."
 task :build_ci do
+  Rake::Task[:knife_test_ci].execute
   Rake::Task[:foodcritic].execute
   Rake::Task[:chefspec].execute
-  Rake::Task[:knife_test_ci].execute
 end
 
 desc "Fires up the Vagrant box."
