@@ -96,5 +96,5 @@ end
 
 desc "Runs foodcritic against all the cookbooks."
 task :foodcritic do
-  sh "bundle exec foodcritic -f any cookbooks"
+  sh "bundle exec foodcritic -I test/foodcritic/* -f any cookbooks"
 end

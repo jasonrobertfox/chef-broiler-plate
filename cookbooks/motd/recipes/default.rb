@@ -8,13 +8,13 @@
 #
 data_bag_item = data_bag_item('global-properties', 'company')
 
-template "/etc/motd.tail" do
-  source "motd.tail.erb"
-  mode "0644"
+template '/etc/motd.tail' do
+  source 'motd.tail.erb'
+  mode '0644'
 
   company_name = data_bag_item['name']
-  filler = "#" * company_name.length
-  space_filler = " " * company_name.length
+  filler = '#' * company_name.length
+  space_filler = ' ' * company_name.length
 
   variables(
     :company_name => company_name,
