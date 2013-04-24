@@ -1,0 +1,38 @@
+default_environments:
+  - development
+  - staging
+  - production
+version_change_threshold: 2
+environment_path: "environments"
+# plugins:
+#   campfire:
+#     account: myaccount
+#     token: a1b2c3d4...
+#   hipchat:
+#     api_token: ABC123
+#     rooms:
+#       - General
+#       - Web Operations
+#     notify: true
+#     color: yellow
+#   jabber:
+#     username: YOURUSER
+#     password: YOURPASSWORD
+#     nickname: Chef Bot
+#     server_name: your.jabberserver.com
+#     server_port: 5222
+#     rooms:
+#       - engineering@your.conference.com/spork
+#       - systems@your.conference.com/spork
+#   git:
+#     enabled: true
+#   irccat:
+#     server: irccat.mydomain.com
+#     port: 12345
+#     gist: "/usr/bin/gist"
+#     channel: ["chef-annoucements"]
+#   graphite:
+#     server: graphite.mydomain.com
+#     port: 2003
+#   eventinator:
+#     url: http://eventinator.mydomain.com/events/oneshot
