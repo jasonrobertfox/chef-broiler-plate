@@ -38,9 +38,18 @@ Go into the directory:
 
     cd chef-broiler-platter
 
+Install the submodules:
+
+    git submodule init
+    git submodule update
+
 Install your dependencies:
 
     bundle install
+
+Check to make sure everything is ok:
+
+    rake check
 
 Start your box:
 
