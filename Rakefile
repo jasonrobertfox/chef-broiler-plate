@@ -81,3 +81,9 @@ desc "Fires up the Vagrant box."
 task :start do
   sh "vagrant up"
 end
+
+desc "Creates a new cookbook."
+task :new_cookbook, :name do |t, args|
+  sh "bundle exec knife cookbook create #{args.name}"
+  sh "bundle exec knife cookbook create_specs #{args.name}"
+end
