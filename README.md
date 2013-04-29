@@ -1,4 +1,4 @@
-#Chef Broiler Platter (1.0.0)
+#Chef Broiler Plate (1.0.0)
 
 ![image](http://www.templeofthai.com/images/products/6270000420.jpg)
 
