@@ -1,4 +1,4 @@
-#Chef Broiler Platter (1.0.0)
+#Chef Broiler Plate (1.0.0)
 
 ![image](http://www.templeofthai.com/images/products/6270000420.jpg)
 
@@ -65,3 +65,7 @@ or
 This is supposed to be super simple. To run the suite of tests against your project:
 
     rake build
+
+##Contribution Guidelines
+This project conforms to the [neverstopbuilding/craftsmanship](https://github.com/neverstopbuilding/craftsmanship) guidlines. Please see that repository for details on project administration.
+
