@@ -65,3 +65,7 @@ or
 This is supposed to be super simple. To run the suite of tests against your project:
 
     rake build
+
+##Contribution Guidelines
+This project conforms to the [neverstopbuilding/craftsmanship](https://github.com/neverstopbuilding/craftsmanship) guidlines. Please see that repository for details on project administration.
+
