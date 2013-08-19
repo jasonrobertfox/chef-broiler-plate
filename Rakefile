@@ -23,7 +23,7 @@ task :check do
   errors = []
   environemnt_vars.each do |var|
     if ENV[var].nil?
-      errors.push(" - \e\[31m#Variable: {var} not set!\e\[0m\n")
+      errors.push(" - \e\[31mVariable: #{var} not set!\e\[0m\n")
     else
       puts " - \e\[32mVariable: #{var} set to \"#{ENV[var]}\"\e\[0m\n"
     end
