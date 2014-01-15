@@ -9,7 +9,7 @@ end
 
 desc "Checks for required dependencies."
 task :check do
-  environemnt_vars = [
+  environment_vars = [
     'OPSCODE_USER',
     'OPSCODE_ORGNAME',
     'KNIFE_CLIENT_KEY_FOLDER',
@@ -21,9 +21,9 @@ task :check do
     'KNIFE_CACHE_PATH'
   ]
   errors = []
-  environemnt_vars.each do |var|
+  environment_vars.each do |var|
     if ENV[var].nil?
-      errors.push(" - \e\[31m#Variable: {var} not set!\e\[0m\n")
+      errors.push(" - \e\[31m#Variable: #{var} not set!\e\[0m\n")
     else
       puts " - \e\[32mVariable: #{var} set to \"#{ENV[var]}\"\e\[0m\n"
     end
